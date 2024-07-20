@@ -146,7 +146,7 @@ The result on the validation set will be automatically output in the training lo
 
 # sentence classification experiment
 
-The dataset can be downloaded via this link: 
+The dataset can be downloaded via this link: https://file.io/khLxVpXur2n3
 
 The environment setup is in requiremts.txt. 
 
