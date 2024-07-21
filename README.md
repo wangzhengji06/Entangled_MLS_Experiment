@@ -145,7 +145,7 @@ python train.py --cfg_file cfgs/kitti_models/pointrcnn.yaml --batch_size=8
 python test.py --cfg_file cfgs/kitti_models/pointrcnn.yaml --batch_size=8  --ckpt /path/checkpount.pth
 ```
 
-The result on the validation set will be automatically output in the training log after training finished. The trained model is provided as `depth_point_rcnn.pth` and `disparity_point_rcnn.pth`. 
+The trained model is provided as `depth_point_rcnn.pth` and `disparity_point_rcnn.pth`. 
 
 
 
