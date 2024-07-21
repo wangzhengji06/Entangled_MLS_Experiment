@@ -137,10 +137,15 @@ Replace the velodyne with 2 versions of point clouds we get form the above.
 Use the same command for different versions of dataset: 
 
 ```
-sh scripts/dist_train.sh ${NUM_GPUS} --cfg_file ./tools/cfgs/kitti_models/pointrcnn.yaml
+# Preoprocess the data
+python -m pcdet.datasets.kitti.kitti_dataset create_kitti_infos tools/cfgs/dataset_configs/kitti_dataset.yaml
+# Training
+python train.py --cfg_file cfgs/kitti_models/pointrcnn.yaml --batch_size=8 
+# Test
+python test.py --cfg_file cfgs/kitti_models/pointrcnn.yaml --batch_size=8  --ckpt /path/checkpount.pth
 ```
 
-The result on the validation set will be automatically output in the training log after training finished. For details on the training, please see  `train_20231102-172426.log` and `train_20231102-113331.log`. 
+The result on the validation set will be automatically output in the training log after training finished. The trained model is provided as `depth_point_rcnn.pth` and `disparity_point_rcnn.pth`. 
 
 
 
