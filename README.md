@@ -151,7 +151,7 @@ The trained model is provided as `depth_point_rcnn.pth` and `disparity_point_rcn
 
 # sentence classification experiment
 
-The dataset can be downloaded via this link: https://file.io/khLxVpXur2n3
+The dataset was compressed and saved as `textcnn_predict_result`.
 
 The environment setup is in requiremts.txt. 
 
